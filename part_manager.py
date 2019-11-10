@@ -20,16 +20,16 @@ customer_entry.grid(row=0, column=3)
 # Retailer
 retailer_text = StringVar()
 retailer_label = Label(app, text='Retailer', font=('bold', 14))
-retailer_label.grid(row=0, column=0, sticky=W)
+retailer_label.grid(row=1, column=0, sticky=W)
 retailer_entry = Entry(app, textvariable=retailer_text)
-retailer_entry.grid(row=0, column=1)
+retailer_entry.grid(row=1, column=1)
 
-# part 4
-part_text = StringVar()
-part_label = Label(app, text='Part Name', font=('bold', 14))
-part_label.grid(row=0, column=0, sticky=W)
-part_entry = Entry(app, textvariable=part_text)
-part_entry.grid(row=0, column=1)
+# Price
+price_text = StringVar()
+price_label = Label(app, text='Price', font=('bold', 14))
+price_label.grid(row=1, column=2, sticky=W)
+price_entry = Entry(app, textvariable=price_text)
+price_entry.grid(row=1, column=3)
 
 app.title('Part Manager')
 app.geometry('700x350')
