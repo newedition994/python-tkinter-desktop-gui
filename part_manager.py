@@ -43,6 +43,9 @@ scrollbar.grid(row=3, column=3)
 parts_list.configure(yscrollcommand=scrollbar.set)
 scrollbar.configure(command=parts_list.yview)
 
+# bind select
+#parts_list.bind('<<ListboxSelect>>', select_item)
+
 app.title('Part Manager')
 app.geometry('700x350')
 
