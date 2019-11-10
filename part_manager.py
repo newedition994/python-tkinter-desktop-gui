@@ -87,5 +87,8 @@ clear_btn.grid(row=2, column=3)
 app.title('Part Manager')
 app.geometry('700x350')
 
+# Populate data
+populate_list()
+
 # start program
 app.mainloop()
