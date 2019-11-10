@@ -1,5 +1,10 @@
 from tkinter import *
 
+
+def populate_list():
+    print('Populate')
+
+
 # Create window object
 app = Tk()
 
