@@ -5,6 +5,26 @@ def populate_list():
     print('Populate')
 
 
+def add_item():
+    print('add item')
+
+
+def select_item(event):
+    print('item selected')
+
+
+def remove_item():
+    print('remove item')
+
+
+def update_item():
+    print('update item')
+
+
+def clear_text():
+    print('clear text')
+
+
 # Create window object
 app = Tk()
 
