@@ -31,6 +31,14 @@ price_label.grid(row=1, column=2, sticky=W)
 price_entry = Entry(app, textvariable=price_text)
 price_entry.grid(row=1, column=3)
 
+# parts list
+parts_list = Listbox(app, height=8, width=50, border=0)
+parts_list.grid(row=3, column=0, columnspan=3, rowspan=6, pady=20, padx=20)
+
+# create scrollbar
+scrollbar = Scrollbar(app)
+scrollbar.grid(row=3, column=3)
+
 app.title('Part Manager')
 app.geometry('700x350')
 
