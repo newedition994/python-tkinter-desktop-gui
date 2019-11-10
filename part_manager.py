@@ -39,6 +39,10 @@ parts_list.grid(row=3, column=0, columnspan=3, rowspan=6, pady=20, padx=20)
 scrollbar = Scrollbar(app)
 scrollbar.grid(row=3, column=3)
 
+# set scroll to listbox
+parts_list.configure(yscrollcommand=scrollbar.set)
+scrollbar.configure(command=parts_list.yview)
+
 app.title('Part Manager')
 app.geometry('700x350')
 
