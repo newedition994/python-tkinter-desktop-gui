@@ -1,7 +1,10 @@
 from tkinter import *
 
-#Create window object
+# Create window object
 app = Tk()
 
-#start program
+app.title('Part Manager')
+app.geometry('700x350')
+
+# start program
 app.mainloop()
