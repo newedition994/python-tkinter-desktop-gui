@@ -1,4 +1,7 @@
 from tkinter import *
+from db import Database
+
+db = Database('store.db')
 
 
 def populate_list():
