@@ -49,8 +49,8 @@ def remove_item():
 
 
 def update_item():
-    db.update(selected_item[0], part_text.get(
-    ), customer_text.get(), retailer_text.get(), price_text.get())
+    db.update(selected_item[0], part_text.get(), customer_text.get(),
+              retailer_text.get(), price_text.get())
     populate_list()
 
 
