@@ -29,5 +29,5 @@ class Database:
                          (part, customer, retailer, price, id))
         self.conn.commit()
 
-    def _del_(self):
+    def __del__(self):
         self.conn.close()
