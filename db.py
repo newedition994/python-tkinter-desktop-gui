@@ -19,3 +19,7 @@ class Database:
         self.cur.execute("INSERT INTO parts VALUES (NULL, ?, ?, ?, ?)",
                          (part, customer, retailer, price))
         self.conn.commit()
+
+    def remove(self, id):
+        self.cur.execute("DELETE FROM parts WHERE id=?", (id,))
+        self.conn.commit()
