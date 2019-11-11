@@ -14,3 +14,8 @@ class Database:
         self.cur.execute("SELECT * FROM parts")
         rows = self.cur.fetchall()
         return rows
+
+    def insert(self, part, customer, retailer, price):
+        self.cur.execute("INSERT INTO parts VALUES (NULL, ?, ?, ?, ?)",
+                         (part, customer, retailer, price))
+        self.conn.commit()
