@@ -26,7 +26,7 @@ def add_item():
 
 def select_item(event):
     try:
-        global select_item
+        global selected_item
         index = parts_list.curselection()[0]
         selected_item = parts_list.get(index)
 
@@ -43,7 +43,9 @@ def select_item(event):
 
 
 def remove_item():
-    print('remove item')
+    db.remove(selected_item[0])
+    clear_text()
+    populate_list()
 
 
 def update_item():
