@@ -28,3 +28,6 @@ class Database:
         self.cur.execute("UPDATE parts SET part = ?, customer = ?, retailer = ?, price = ? WHERE id = ?",
                          (part, customer, retailer, price, id))
         self.conn.commit()
+
+    def _del_(self):
+        self.conn.close()
