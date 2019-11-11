@@ -9,3 +9,8 @@ class Database:
             "CREATE TABLE IF NOT EXISTS parts (id INTEGER PRIMARY KEY, part text, customer text, retailer text, price text)"
         )
         self.conn.commit()
+
+    def fetch(self):
+        self.cur.execute("SELECT * FROM parts")
+        rows = self.cur.fetchall()
+        return rows
